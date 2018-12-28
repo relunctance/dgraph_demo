@@ -151,7 +151,7 @@ func nodeRdf(uid string) string {
 // rand to build uid
 func assignUid(max int64) string {
 	uid := Rand(1, max)
-	return fmt.Sprintf("0x%d", uid)
+	return fmt.Sprintf("0x%x", uid)
 }
 
 // Rand between [min ~ max]
