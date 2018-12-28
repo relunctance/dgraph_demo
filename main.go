@@ -87,6 +87,7 @@ func (p *ProcChain) start() {
 
 func (p *ProcChain) startNodes() {
 	ch := make(chan string, p.c)
+	defer close(ch)
 	for i := 0; i < p.c; i++ {
 		go func() {
 			ch <- p.outputNodes()
@@ -104,6 +105,7 @@ func (p *ProcChain) startNodes() {
 
 func (p *ProcChain) startEdges() {
 	ch := make(chan []string, p.c)
+	defer close(ch)
 	for i := 0; i < p.c; i++ {
 		go func() {
 			ch <- p.outputEdegs()
