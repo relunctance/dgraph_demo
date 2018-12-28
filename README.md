@@ -11,7 +11,7 @@ curl -s "http://you.zero.leader:6080/assign?what=uids&num=650000000"
 go run main.go --help
 
 -c int
-    how many groutine num for run (default 100)
+    how many goroutine num for run (default 100)
 -maxuid int
     the uid random boundary value (default 650000000)
 -num int
