@@ -6,8 +6,7 @@ curl -s "http://you.zero.leader:6080/assign?what=uids&num=650000000"
 
 ```
 
-
-usage:
+## usage:
 ```
 go run main.go --help
 
@@ -21,7 +20,7 @@ go run main.go --help
     which type should build  , the value you can select 'nodes' or 'edges'  (default "nodes")
 ```
 
-build nodes:
+## build nodes:
 ```
 go run main.go -c 1000 -type nodes
 
@@ -36,7 +35,7 @@ go run main.go -c 1000 -type nodes
 
 ```
 
-build edges:
+## build edges:
 ```
 go run main.go -c 1000  -type edges 
 
@@ -48,7 +47,7 @@ go run main.go -c 1000  -type edges
 ...
 ```
 
-schema:
+## schema:
 ```
 md5: string @index(hash) .
 parent: uid @reverse @count .
