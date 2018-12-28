@@ -1,8 +1,11 @@
 # dgraph_demo
+### Data is a description of process relationships 
+
 
 useage:
 ```
 go run main.go --help
+
 -c int
     how many groutine num for run (default 100)
 -maxuid int
