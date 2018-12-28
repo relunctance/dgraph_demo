@@ -16,6 +16,7 @@ go run main.go --help
 build nodes:
 ```
 go run main.go -c 1000 -type nodes
+
 <0x399816484>   <md5>   "15af151e0a8900a6a5910e9ab7c3d1d9"      .
 <0x88727215>    <md5>   "34aa20a185bad5c4978ef146ac22d8e8"      .
 <0x123765589>   <md5>   "9f9ddcdf6d549db46604f293aeeb7056"      .
