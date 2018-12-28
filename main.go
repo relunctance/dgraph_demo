@@ -42,7 +42,7 @@ func main() {
 	flag.Int64Var(&maxUid, "maxuid", 650000000, "the uid random boundary value") // 0.65 Billion
 	flag.Int64Var(&num, "num", 10000, "how many data you want to build")
 	flag.StringVar(&tp, "type", TYPE_NODES_NAME, "which type should build  , the value you can select 'nodes' or 'edges' ")
-	flag.IntVar(&c, "c", 100, "how many groutine num for run")
+	flag.IntVar(&c, "c", 100, "how many goroutine num for run")
 	flag.Parse()
 	if c <= 0 {
 		c = 100
