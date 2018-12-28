@@ -2,7 +2,7 @@
 ### Data is a description of process relationships 
 
 
-useage:
+usage:
 ```
 go run main.go --help
 
@@ -47,3 +47,4 @@ schema:
 ```
 md5: string @index(hash) .
 parent: uid @reverse @count .
+```
