@@ -1,5 +1,10 @@
 # dgraph_demo
 ### Data is a description of process relationships 
+- befor you load , you should assign max uid (eg:650000000)
+```
+curl -s "http://you.zero.leader:6080/assign?what=uids&num=650000000"
+
+```
 
 
 usage:
